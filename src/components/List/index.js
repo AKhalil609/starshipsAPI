@@ -3,7 +3,7 @@ import axios from "axios";
 import Cards from "../Card";
 import {  Button } from "semantic-ui-react";
 import "./List.css";
-import ReactLoading from "react-loading";
+import Loading from '../Loading'
 
 export default class index extends Component {
   constructor() {
@@ -79,38 +79,7 @@ export default class index extends Component {
   render() {
     if (this.state.loading) {
         return (
-            <div>
-              <div className="cards-loading">
-                  <div>
-                  <ReactLoading type={"spin"} color={"#fff"} height={50} width={50} />
-                  </div>
-                
-              </div>
-              <div className="buttonGroup">
-                <Button
-                  inverted
-                  color="red"
-                  onClick={this.handelPrevious}
-                  // eslint-disable-next-line
-                  disabled={this.state.currentPage == 1 ? true : false}
-                >
-                  Previous
-                </Button>
-                <Button
-                  inverted
-                  color="blue"
-                  onClick={this.handelNext}
-                  disabled={
-                      // eslint-disable-next-line
-                    Math.ceil(this.state.data.count / 10) == this.state.currentPage 
-                      ? true
-                      : false
-                  }
-                >
-                  Next
-                </Button>
-              </div>
-            </div>
+            <Loading/>
           )
     }else{
         return (

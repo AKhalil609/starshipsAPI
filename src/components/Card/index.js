@@ -1,7 +1,7 @@
 import React from "react";
 import "./card.css";
 import { Card, Icon, Progress } from "semantic-ui-react";
-import storm from "../../storm.ico";
+import storm from "../../assets/storm.ico";
 
 export default function index(props) {
   return (

@@ -1,0 +1,9 @@
+.cards-loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 28px 0px;
+    border-radius: 12px;
+    min-height: 88vh;
+    color: aliceblue
+}
