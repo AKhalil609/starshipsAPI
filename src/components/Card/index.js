@@ -44,7 +44,7 @@ export default props =>{
           {Number(props.starships.hyperdrive_rating) > 0 &&
           Number(props.starships.hyperdrive_rating) !== "unknown" ? (
             <Progress
-              percent={(Number(props.starships.hyperdrive_rating) / 5) * 100}
+              percent={100-(Number(props.starships.hyperdrive_rating) / 5) * 100}
               success
             />
           ) : (
