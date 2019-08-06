@@ -3,7 +3,14 @@ import "./card.css";
 import { Card, Icon, Progress } from "semantic-ui-react";
 import storm from "../../assets/storm.ico";
 
-export default function index(props) {
+/**
+ * Functional react component for the starship card.
+ * @function
+ * @param {object} props - React props.
+ * @returns {JSX.Element} - Rendered component.
+ */
+
+export default props =>{
   return (
     <div>
       <Card>

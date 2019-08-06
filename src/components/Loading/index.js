@@ -3,7 +3,13 @@ import ReactLoading from "react-loading";
 import {  Button } from "semantic-ui-react";
 import './Loading.css';
 
-export default function index() {
+/**
+ * Functional react component for the loading component.
+ * @function
+ * @returns {JSX.Element} - Rendered component.
+ */
+
+export default ()=> {
     return (
         <div>
           <div className="cards-loading">
