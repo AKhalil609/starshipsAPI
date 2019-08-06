@@ -1,0 +1,7 @@
+.content{
+    text-align: left;
+}
+
+.ui.card:first-child{
+    margin: 4px !important;
+}
